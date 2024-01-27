@@ -9,7 +9,7 @@ import urllib.request
 import json
 
 
-openai_api_key = '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'
+openai_api_key = '#'
 openai.api_key = openai_api_key
 
 
@@ -90,7 +90,7 @@ def forecast(request):
            city = request.POST['city']
 
            source = urllib.request.urlopen('http://api.openweathermap.org/data/2.5/weather?q=' +
-                                        city + '&units=metric&appid=da94dd02dae9d736b3977b0bb6b3b957').read()
+                                        city + '&units=metric&appid#').read()
            list_of_data = json.loads(source)
            
            data ={

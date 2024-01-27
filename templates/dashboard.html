@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmers' Assistance</title>
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0074D9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.custom-button{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    background-color: #0074D9;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Example user details styles */
+#user-details {
+    font-size: 16px;
+}
+
+/* Example question history styles */
+#question-history {
+    font-size: 16px;
+}
+
+/* Example weather history styles */
+#weather-history {
+    font-size: 16px;
+}
+
+/* Add more styles as needed for your specific design */
+
+    </style>
+</head>
+<body>
+    <header>
+        <!--h1>Welcome to Your Farmer's Dashboard</!h1-->
+        {% if user.is_authenticated %}
+        <div class="card-header bg-primary text-white"><h1><b>Welcome, {{user.username}} To your Farmers Dashboard</b></h1>
+        {% endif %}
+    </header>
+    <main>
+        <a href='chatbot'>
+            <section id="ask-question">
+               <h2>Ask a Question</h2>
+            </section>
+        </a>
+        <a href='forecast'>
+            <section id="weather-forecast">
+               <h2>Weather Forecast</h2>
+            </section>
+        </a>
+        <a href='#'>
+            <section id="best-practices">
+               <h2>Best Practices</h2>
+            </section>
+        </a>
+        <a href='#'>
+            <section id="about-developers">
+               <h2>About Developers</h2>
+            </section>
+        </a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmers' Assistance</p>
+    </footer>
+    <script>
+        
+    </script>
+
+    </body>
+</html>

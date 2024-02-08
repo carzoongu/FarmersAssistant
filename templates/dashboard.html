@@ -87,7 +87,7 @@ footer {
     <header>
         <!--h1>Welcome to Your Farmer's Dashboard</!h1-->
         {% if user.is_authenticated %}
-        <div class="card-header bg-primary text-white"><h1><b>Welcome, {{user.username}} To your Farmers Dashboard</b></h1>
+        <div class="card-header bg-primary text-white"><h1><b>Welcome, {{user.first_name}} To your Farmers Dashboard</b></h1>
         {% endif %}
     </header>
     <main>

@@ -8,12 +8,7 @@ from django.utils import timezone
 import urllib.request
 import json
 
-
-<<<<<<< HEAD
-openai_api_key = ''
-=======
 openai_api_key = '#'
->>>>>>> 466592ecaa048242ad2baf748eac212e870dd0f6
 openai.api_key = openai_api_key
 
 

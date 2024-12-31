@@ -15,9 +15,9 @@ openai.api_key = openai_api_key
 def ask_openai(message):
     response = openai.chat.completions.create(
         model = "gpt-3.5-turbo",
-        #prompt = message,
-        #max_tokens=150,
-        #n=1,
+        #prompt = message, 
+        #max_tokens=150, 
+        #n=1, 
         #stop=None,
         #temperature=0.7,
         messages=[

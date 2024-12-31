@@ -27,7 +27,7 @@ def ask_openai(message):
     )
     
     answer = response.choices[0].message.content.strip()
-    return answer
+    return answer 
 
 
 def chatbot(request):

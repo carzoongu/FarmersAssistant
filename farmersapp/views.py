@@ -21,7 +21,7 @@ def ask_openai(message):
         #stop=None,
         #temperature=0.7,
         messages=[
-            {"role": "system", "content": "You are an agriculture expert, you only answer questions related to agriculture only. Yoy ignore the rest of the questions by giving a polite response. You can respond to greeting and weather forecast related questions"},
+            {"role": "system", "content": "You are an agriculture expert,you only answer questions related to agriculture only. Yoy ignore the rest of the questions by giving a polite response. You can respond to greeting and weather forecast related questions"},
             {"role": "user", "content": message},
         ]
     )
